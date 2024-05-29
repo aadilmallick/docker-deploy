@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV PORT=10000
+ENV PORT=80
 
 EXPOSE ${PORT}
 
