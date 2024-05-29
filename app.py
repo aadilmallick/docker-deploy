@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, send_file
 from rembg import remove
 from PIL import Image
 from io import BytesIO
+import os
 
 app = Flask(__name__)
 
@@ -25,5 +26,6 @@ def upload_file():
 
 if __name__ == '__main__':
     print("Starting Flask app...")
-    app.run(host='0.0.0.0', debug=True, port=5100)
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port)
     
