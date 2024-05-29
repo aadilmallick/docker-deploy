@@ -1,10 +1,7 @@
-A simple flask app to remove the background of an image with [Rembg](https://github.com/danielgatis/rembg)
+# DOcker learning
 
-Watch the [tutorial](https://youtu.be/cw34KMPSt4k) on YouTube
+## overriding docker commands to run shell
 
-## Run it
-
-```
-pip install -r requirements.txt
-python app.py
+```bash
+docker run -it rembg-webapp-tutorial-web sh
 ```
